@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using TestUnit6.Models.Data;
 
-namespace TestUnit6.Context
+namespace TestUnit6.Models
 {
     public class Context : DbContext
     {

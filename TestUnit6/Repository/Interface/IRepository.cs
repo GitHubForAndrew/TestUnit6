@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 //using TestUnit6.Models.
 
-namespace TestUnit6.Abstract.Interface
+namespace TestUnit6.Repository.Interface
 {
-    interface IRepository
+    public interface IRepository
     {
     }
 }

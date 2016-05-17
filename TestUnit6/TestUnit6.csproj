@@ -49,6 +49,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -153,8 +157,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context\Context.cs" />
-    <Compile Include="Models\Data\Account.cs" />
+    <Compile Include="Infrastructure\Abstract\IAuhtProvider.cs" />
+    <Compile Include="Infrastructure\Concrete\FormsAuthProvider.cs" />
+    <Compile Include="Infrastructure\NinjectCopntrollerFactory.cs" />
+    <Compile Include="Models\Context.cs" />
     <Compile Include="Models\Data\BaseEntity.cs" />
     <Compile Include="Repository\Interface\IRepository.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />

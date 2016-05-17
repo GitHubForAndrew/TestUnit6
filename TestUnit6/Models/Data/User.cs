@@ -9,7 +9,6 @@ namespace TestUnit6.Models.Data
     public class User : BaseEntity
     {
         public string Name { get; set; }
-        public Account  Account { get; private set; }
 
         public ICollection<Task> Tasks { get; set; }
     }
